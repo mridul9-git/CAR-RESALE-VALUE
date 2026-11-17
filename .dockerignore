@@ -1,0 +1,15 @@
+.git
+.gitignore
+.dockerignore
+__pycache__/
+*.pyc
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+models/
+plots/
+*.ipynb
+*.jpeg
+README.md
+Dockerfile

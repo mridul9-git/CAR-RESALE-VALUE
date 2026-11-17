@@ -1,0 +1,97 @@
+Leaf values are log(1 + price). exp(value) - 1 gives the price in $.
+Numeric features are standardised (z-scores).
+
+|--- num__mileage <= -0.28
+|   |--- num__horsepower <= -0.15
+|   |   |--- num__model_year <= 0.64
+|   |   |   |--- num__horsepower <= -0.86
+|   |   |   |   |--- num__model_year <= -1.14
+|   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- num__model_year >  -1.14
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |--- num__horsepower >  -0.86
+|   |   |   |   |--- num__mileage <= -0.86
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- num__mileage >  -0.86
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |--- num__model_year >  0.64
+|   |   |   |--- num__horsepower <= -1.29
+|   |   |   |   |--- num__mileage <= -1.14
+|   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- num__mileage >  -1.14
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |--- num__horsepower >  -1.29
+|   |   |   |   |--- num__model_year <= 0.97
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- num__model_year >  0.97
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |--- num__horsepower >  -0.15
+|   |   |--- num__mileage <= -0.94
+|   |   |   |--- num__cylinders <= 1.62
+|   |   |   |   |--- num__horsepower <= 1.35
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- num__horsepower >  1.35
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |--- num__cylinders >  1.62
+|   |   |   |   |--- num__mileage <= -1.23
+|   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- num__mileage >  -1.23
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |--- num__mileage >  -0.94
+|   |   |   |--- num__horsepower <= 1.36
+|   |   |   |   |--- cat__brand_Porsche <= 0.50
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- cat__brand_Porsche >  0.50
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |--- num__horsepower >  1.36
+|   |   |   |   |--- num__engine_liters <= 0.43
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- num__engine_liters >  0.43
+|   |   |   |   |   |--- truncated branch of depth 4
+|--- num__mileage >  -0.28
+|   |--- num__model_year <= -0.17
+|   |   |--- num__horsepower <= -0.09
+|   |   |   |--- num__mileage <= 0.79
+|   |   |   |   |--- num__horsepower <= -1.14
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- num__horsepower >  -1.14
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |--- num__mileage >  0.79
+|   |   |   |   |--- num__horsepower <= -1.37
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- num__horsepower >  -1.37
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |--- num__horsepower >  -0.09
+|   |   |   |--- num__mileage <= 0.29
+|   |   |   |   |--- num__horsepower <= 1.82
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- num__horsepower >  1.82
+|   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- num__mileage >  0.29
+|   |   |   |   |--- num__horsepower <= 0.54
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- num__horsepower >  0.54
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |--- num__model_year >  -0.17
+|   |   |--- num__horsepower <= 0.10
+|   |   |   |--- num__model_year <= 0.48
+|   |   |   |   |--- num__horsepower <= -0.85
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- num__horsepower >  -0.85
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |--- num__model_year >  0.48
+|   |   |   |   |--- num__horsepower <= -0.94
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- num__horsepower >  -0.94
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |--- num__horsepower >  0.10
+|   |   |   |--- num__model_year <= 0.32
+|   |   |   |   |--- num__horsepower <= 0.54
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- num__horsepower >  0.54
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |--- num__model_year >  0.32
+|   |   |   |   |--- num__horsepower <= 0.84
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- num__horsepower >  0.84
+|   |   |   |   |   |--- truncated branch of depth 4
